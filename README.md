@@ -25,73 +25,45 @@ This project follows a structured approach:
 4. Data Transformation – Compute additional metrics and enrich datasets.
 5. Insights Generation – Perform ad-hoc analysis to derive business insights.
 
-Exploratory Data Analysis (EDA)
-Data Exploration
-Load CSV files into Pandas DataFrames.
-
-Explore fact_bookings dataset to identify:
-
+## Data Exploration
+1. Load CSV files into Pandas DataFrames.
+2. Explore fact_bookings dataset to identify:
 Number of records (rows & columns).
-
 Unique room categories.
-
 Booking platforms and their contributions.
-
 Statistics of numerical columns.
-
-Analyze dim_hotels dataset:
-
+3. Analyze dim_hotels dataset:
 Number of hotels per category and city.
-
 Visualize hotel distribution across cities using bar charts.
-
-Answer business questions:
-
+4. Answer business questions:
 Identify unique property_id values in aggregated bookings dataset.
-
 Compute total bookings per property.
-
 Determine days when bookings exceeded hotel capacity.
-
 Identify properties with the highest capacity.
 
-Data Cleaning
-Handling Negative Guest Entries: Remove entries where guest count is negative.
+## Data Cleaning
+1. Handling Negative Guest Entries: Remove entries where guest count is negative.
+2. Detecting Revenue Outliers: Use a 3-standard deviation method to define upper and lower limits for revenue, filtering out extreme values.
+3. Managing Null Values: Ignore null values in ratings_given column as they don’t impact analysis.
+4. Null Value Treatment: Identify missing values in aggregate bookings and fill them with appropriate substitutes such as mean or median.
 
-Detecting Revenue Outliers: Use a 3-standard deviation method to define upper and lower limits for revenue, filtering out extreme values.
+## Data Transformation
+1. Calculating Occupancy Percentage: Compute occupancy percentage (successful bookings / capacity).
+2. Data Formatting: Multiply occupancy percentage by 100 and round values to 2 decimal places for better readability.
 
-Managing Null Values: Ignore null values in ratings_given column as they don’t impact analysis.
-
-Null Value Treatment: Identify missing values in aggregate bookings and fill them with appropriate substitutes such as mean or median.
-
-Data Transformation
-Calculating Occupancy Percentage: Compute occupancy percentage (successful bookings / capacity).
-
-Data Formatting: Multiply occupancy percentage by 100 and round values to 2 decimal places for better readability.
-
-Insights Generation
+## Insights Generation
 This phase answers key business questions using groupby(), merge(), drop(), concat(), info(), to_datetime() functions in Pandas.
-
 Key Findings:
-Average occupancy rate per room category – Understand booking efficiency across room types.
-
-City-wise occupancy rates – Identify trends for different cities.
-
-Weekday vs. Weekend occupancy comparison – Determine peak booking times.
-
-Monthly city-wise occupancy analysis – Evaluate how demand varies across months.
-
-Revenue insights:
-
+1. Average occupancy rate per room category – Understand booking efficiency across room types.
+2. City-wise occupancy rates – Identify trends for different cities.
+3. Weekday vs. Weekend occupancy comparison – Determine peak booking times.
+4. Monthly city-wise occupancy analysis – Evaluate how demand varies across months.
+5. Revenue insights:
 Total revenue per city.
-
 Month-by-month revenue trends.
-
 Revenue distribution across hotel categories.
-
 Pie chart visualization of revenue from different booking platforms.
+6. Customer ratings analysis – Determine average rating per city to gauge customer satisfaction.
 
-Customer ratings analysis – Determine average rating per city to gauge customer satisfaction.
-
-Conclusion
+## Conclusion
 This project successfully leverages Pandas for structured Exploratory Data Analysis on hotel bookings data. The findings from this analysis provide actionable insights that can help AtliQ Grands optimize pricing, manage inventory, and improve customer engagement. The structured workflow—from data cleaning to insights generation—showcases how data analytics can drive business decisions effectively.
