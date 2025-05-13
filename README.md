@@ -2,39 +2,28 @@
 ## Project Overview
 This project is an exploratory data analysis (EDA) exercise focused on hospitality domain data. It is part of the Data Analytics Bootcamp by Codebasics. The goal is to analyze hotel bookings data using Python (Pandas) and extract meaningful insights to help business decision-making.
 
-Business Problem
+## Business Problem
 AtliQ Grands, a hotel chain in India, is facing declining market share and revenue due to increasing competition. To make informed decisions, the management has hired a data analytics team to analyze booking data and identify opportunities for revenue growth.
 
-Data Source & ETL Process
+## Data Source & ETL Process
 Bookings data is stored in a transactional database. However, querying over this live database could impact operations negatively. Therefore, an ETL process is performed to extract, transform, and load the data into a Data Warehouse. Analysts work with cleaned and structured data from the Data Warehouse for insights.
 
-Dataset Description
-The following CSV files, extracted from the Data Warehouse, serve as the basis for analysis:
+## Dataset Description
+The following CSV files, extracted from the Data Warehouse, serve as the basis for analysis:  
+1. dim_date.csv: Contains date-related attributes such as week number and whether the day is a weekday or weekend.
+2. dim_hotels.csv: Details of hotels, including property_id, category, and location.
+3. dim_rooms.csv: Room details, categorized by class (Standard, Elite, Premium, Presidential).
+4. fact_aggregated_bookings.csv: Aggregated booking and capacity data.
+5. fact_bookings.csv: Detailed transaction data of individual bookings.
+6. new_data_august.csv: Newly collected booking data for August.
 
-dim_date.csv: Contains date-related attributes such as week number and whether the day is a weekday or weekend.
-
-dim_hotels.csv: Details of hotels, including property_id, category, and location.
-
-dim_rooms.csv: Room details, categorized by class (Standard, Elite, Premium, Presidential).
-
-fact_aggregated_bookings.csv: Aggregated booking and capacity data.
-
-fact_bookings.csv: Detailed transaction data of individual bookings.
-
-new_data_august.csv: Newly collected booking data for August.
-
-Project Steps
-This project follows a structured approach:
-
-Understanding the Business Problem – Define objectives and key questions.
-
-Data Collection & Understanding – Explore available datasets.
-
-Data Cleaning & Exploration – Remove inconsistencies, handle null values, and detect outliers.
-
-Data Transformation – Compute additional metrics and enrich datasets.
-
-Insights Generation – Perform ad-hoc analysis to derive business insights.
+## Project Steps
+This project follows a structured approach:  
+1. Understanding the Business Problem – Define objectives and key questions.
+2. Data Collection & Understanding – Explore available datasets.
+3. Data Cleaning & Exploration – Remove inconsistencies, handle null values, and detect outliers.
+4. Data Transformation – Compute additional metrics and enrich datasets.
+5. Insights Generation – Perform ad-hoc analysis to derive business insights.
 
 Exploratory Data Analysis (EDA)
 Data Exploration
