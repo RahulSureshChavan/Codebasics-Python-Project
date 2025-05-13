@@ -1,5 +1,5 @@
 # Exploratory Data Analysis (EDA) in the Hospitality Domain using Python (Pandas)
-Project Overview
+## Project Overview
 This project is an exploratory data analysis (EDA) exercise focused on hospitality domain data. It is part of the Data Analytics Bootcamp by Codebasics. The goal is to analyze hotel bookings data using Python (Pandas) and extract meaningful insights to help business decision-making.
 
 Business Problem
