@@ -65,5 +65,13 @@ Revenue distribution across hotel categories.
 Pie chart visualization of revenue from different booking platforms.
 6. Customer ratings analysis – Determine average rating per city to gauge customer satisfaction.
 
+## Insights in Numbers
+1. Occupancy Rates: Delhi had the highest occupancy (61%), Bangalore the lowest (56%).
+2. Weekday vs. Weekend Demand: Weekdays averaged 51% occupancy, while weekends surged to 72%.
+3. Revenue Trends: May 2022 generated the highest revenue (581M INR), while June 2022 had the lowest (553M INR).
+4. Booking Source Contribution: Third-party platforms accounted for 41% of total revenue.
+5. Top Earning Cities: Mumbai led with 668M INR, while Delhi had the lowest at 294M INR.
+6. Hotel Category Insights: AtliQ Exotica generated the highest revenue (320M INR), while AtliQ Seasons earned the least (66M INR).
+
 ## Conclusion
 This project successfully leverages Pandas for structured Exploratory Data Analysis on hotel bookings data. The findings from this analysis provide actionable insights that can help AtliQ Grands optimize pricing, manage inventory, and improve customer engagement. The structured workflow—from data cleaning to insights generation—showcases how data analytics can drive business decisions effectively.
